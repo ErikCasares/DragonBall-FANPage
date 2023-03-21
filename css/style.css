@@ -229,6 +229,7 @@ grid-template-areas:
 
 .yamcha {
     grid-area: yamcha;
+    justify-content: flex-start;
 }
 
 .roshi {
@@ -301,7 +302,7 @@ img {
     }
 
     .historia {
-        background-color: #7c7c7c;
+        background-color: #c7c7c791;
     }
     .galeria{
         grid-template-areas: 
