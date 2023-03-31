@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins:ital@0;1&family=Rubik:ital@0;1&display=swap');
+@import './variables';
+@import './general';
+@import './header';
+@import'./aside';
+@import './footer';
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+h1 {
+    margin-right: 40px;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+nav li {
+
+    text-align: center;
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .aside {
+        flex-direction: column;
+    }
+
+    .aside-noticias {
+        flex-direction: row;
+        width: 50px;
+    }
+
+    .grid-layout {
+        grid-template-columns: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 992px) {
+    .sagas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navFlex {
+        flex-direction: column;
+    }
+
+    .noticia{
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+    }
+
+    .historia {
+        background-color: #c7c7c791;
+    }
+    .galeria{
+        grid-template-areas: 
+        "goku gohan "
+        "krillin vegeta"
+        "roshi yamcha"
+        "androide piccolo "
+        "freezer freezer"
+    
+    }
+    .personaje{
+        max-width: 100%;
+        justify-content: start;
+        align-items: normal;
+    }
+}

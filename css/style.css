@@ -1,321 +1,281 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins:ital@0;1&family=Rubik:ital@0;1&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins:ital@0;1&family=Rubik:ital@0;1&display=swap");
+.container {
+  background-image: linear-gradient(rgb(87, 90, 243), blue);
 }
 
 body {
-    background-color: #eb7100;
+  background-color: #eb7100;
 }
 
 .grid-layout {
-    display: grid;
-    align-self: center;
-    grid-template-columns: auto 20%;
-    grid-template-rows: auto auto auto;
-    justify-content: stretch;
-}
-
-.sagas {
-    display: grid;
-    grid-template-columns: 40% 40%;
-    grid-template-rows: auto auto auto auto;
-    gap: 10px;
-    justify-content: space-around;
-    margin: 1% 0;
-}
-
-.historia {
-    padding: 50px 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: justify;
-    background-color: rgba(240, 240, 240, 0.315);
-    border-radius: 10px;
-
-}
-
-.historia p {
-    padding: 0% 10%;
-}
-
-.historia img {
-    width: 300px;
-}
-
-.dball {
-    grid-column: 1/2;
-    grid-row: 1/3;
-}
-
-.dbz {
-    grid-column: 2/3;
-    grid-row: 2/4;
-}
-
-.dbgt {
-    grid-column: 1/2;
-    grid-row: 3/5;
-}
-
-.hesferas {
-    grid-column: 2/3;
-    grid-row: 4/6;
-}
-
-.navFlex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    text-transform: uppercase;
-    border: 5px solid #000;
-    padding: 5px 10px;
-    height: fit-content;
-    font-size: larger;
-    text-decoration: double;
-    background-color: #297eec;
-    border-radius: 50px 0px;
-    margin: 5px 4px 5px 5px;
-}
-
-header {
-    text-decoration-color: #eb7100;
-    font-family: 'Poppins', sans-serif;
-    grid-column: 1/3;
+  display: grid;
+  align-self: center;
+  grid-template-columns: auto 20%;
+  grid-template-rows: auto auto auto;
+  justify-content: stretch;
 }
 
 main {
-    padding-left: 5%;
-    padding-right: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .mainFlex {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-.aside {
-    background-color: #eec6c6;
-    border: solid red;
-    margin: 7px;
-    text-align: center;
-    padding: 1%;
-    display: flex;
-    flex-direction: column;
-    scroll-behavior: smooth;
+img {
+  max-width: min-content;
+  border-radius: 20px;
 }
 
-.aside-noticias {
-    display: flex;
-    flex-direction: column;
+.sagas {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: auto auto auto auto;
+  gap: 10px;
+  justify-content: space-around;
+  margin: 1% 0;
+}
+.sagas .historia {
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  background-color: rgba(240, 240, 240, 0.315);
+  border-radius: 10px;
+}
+.sagas .historia p {
+  padding: 0% 10%;
+}
+.sagas .historia img {
+  width: 300px;
+}
+.sagas .dball {
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+.sagas .dbz {
+  grid-column: 2/3;
+  grid-row: 2/4;
+}
+.sagas .dbgt {
+  grid-column: 1/2;
+  grid-row: 3/5;
+}
+.sagas .hesferas {
+  grid-column: 2/3;
+  grid-row: 4/6;
 }
 
-.noticia {
-    background-color: #b6b6b6;
-    align-items: center;
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    margin: 1%;
+.personaje {
+  align-items: baseline;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
 }
-
-footer {
-    grid-column: 1/3;
-    background-color: #297eec;
-
-    padding: 10px 5%;
-    border-radius: 50px 0px;
-    border-color: #000;
-    margin: 20px 4px 5px 5px;
-    border: 5px solid;
-}
-
-.footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-.icon {
-    width: 48px;
-    height: 48px;
+.personaje img {
+  object-fit: contain;
 }
 
 li {
-    list-style-type: none;
-}
-
-nav ul li a {
-    list-style-type: none;
-    color: black;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-nav ul li:hover {
-    background-color: #eb7100;
-
+  list-style-type: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 p {
-    padding-top: 10px;
-    font-family: 'Rubik', sans-serif;
+  padding-top: 10px;
+  font-family: "Rubik", sans-serif;
 }
-/*
+
 .galeria {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-
-grid-template-areas: 
-"goku goku gohan vegeta"
-"goku goku krillin vegeta"
-"roshi roshi krillin yamcha"
-"androide piccolo freezer freezer";
-}**/
-.galeria{
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-template-rows: repeat(3, 200px);
-    gap: 15px;
-    padding: 1%;
-    justify-content: center;
-    grid-template-areas: 
-"goku goku gohan vegeta"
-"goku goku krillin vegeta"
-"roshi roshi krillin yamcha"
-"androide piccolo freezer freezer";
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(3, 200px);
+  gap: 15px;
+  padding: 1%;
+  justify-content: center;
+  grid-template-areas: "goku goku gohan vegeta" "goku goku krillin vegeta" "roshi roshi krillin yamcha" "androide piccolo freezer freezer";
 }
-.personaje{
-    align-items: baseline;
-    overflow: hidden;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
+.galeria .goku {
+  grid-area: goku;
 }
-.personaje img{
-    
-    object-fit: contain;
+.galeria .gohan {
+  grid-area: gohan;
+}
+.galeria .vegeta {
+  grid-area: vegeta;
+}
+.galeria .krillin {
+  grid-area: krillin;
+}
+.galeria .yamcha {
+  grid-area: yamcha;
+  justify-content: flex-start;
+}
+.galeria .roshi {
+  grid-area: roshi;
+}
+.galeria .piccolo {
+  grid-area: piccolo;
+}
+.galeria .androide {
+  grid-area: androide;
+}
+.galeria .freezer {
+  grid-area: freezer;
 }
 
-
-.goku {
-    grid-area: goku;
+.navFlex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: uppercase;
+  border: 5px solid #000;
+  padding: 5px 10px;
+  height: fit-content;
+  font-size: larger;
+  text-decoration: double;
+  background-image: linear-gradient(to right, #eb7100, #297eec, blue);
+  border-radius: 50px 0px;
+  margin: 5px 4px 5px 5px;
 }
 
-.gohan {
-    grid-area: gohan;
+header {
+  text-decoration-color: #eb7100;
+  font-family: "Poppins", sans-serif;
+  grid-column: 1/3;
 }
 
-.vegeta {
-    grid-area: vegeta;
+nav ul li a {
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.4;
 }
 
-.krillin {
-    grid-area: krillin;
+.box {
+  width: 100px;
+  transition: 1.5s;
+}
+.box:hover {
+  background-color: #eb7100;
 }
 
-.yamcha {
-    grid-area: yamcha;
-    justify-content: flex-start;
+@keyframes un_efecto {
+  0% {
+    background-color: orange;
+  }
+  100% {
+    background-color: #297eec;
+  }
+}
+.aside {
+  float: right;
+  background-color: rgba(238, 198, 198, 0.5803921569);
+  border: solid rgba(255, 255, 255, 0.219);
+  text-align: center;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
+  background-image: linear-gradient(to right, #eb7100, #297eec);
+}
+.aside .noticia {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.337254902);
+  align-items: center;
+  padding: 5px;
+  margin: 1%;
 }
 
-.roshi {
-    grid-area: roshi;
+footer {
+  grid-column: 1/3;
+  background-image: linear-gradient(to right, #eb7100, #297eec);
+  text-transform: uppercase;
+  padding: 10px 5%;
+  border-radius: 50px 0px;
+  border-color: #000;
+  border: 5px solid;
 }
 
-.piccolo {
-    grid-area: piccolo;
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
-.androide {
-    grid-area: androide;
+.foot {
+  padding: 1%;
 }
 
-.freezer {
-    grid-area: freezer;
+.icon {
+  width: 48px;
+  height: 48px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-    margin-right: 40px;
+  margin-right: 40px;
 }
 
 h2 {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 nav li {
-
-    text-align: center;
-}
-
-
-
-img {
-    max-width: min-content;
-    border-radius: 20px;
+  text-align: center;
 }
 
 @media screen and (max-width: 1200px) {
-    .aside {
-        flex-direction: column;
-    }
-
-    .aside-noticias {
-        flex-direction: row;
-        width: 50px;
-    }
-
-    .grid-layout {
-        grid-template-columns: 100%;
-    }
-
-
+  .aside {
+    flex-direction: column;
+  }
+  .aside-noticias {
+    flex-direction: row;
+    width: 50px;
+  }
+  .grid-layout {
+    grid-template-columns: 100%;
+  }
 }
-
 @media screen and (max-width: 992px) {
-    .sagas {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .navFlex {
-        flex-direction: column;
-    }
-
-    .noticia{
-        display: grid;
-        grid-template-columns: 50% 50%;
-
-    }
-
-    .historia {
-        background-color: #c7c7c791;
-    }
-    .galeria{
-        grid-template-areas: 
-        "goku gohan "
-        "krillin vegeta"
-        "roshi yamcha"
-        "androide piccolo "
-        "freezer freezer"
-    
-    }
-    .personaje{
-        max-width: 100%;
-        justify-content: start;
-        align-items: normal;
-    }
-}
+  .sagas {
+    display: flex;
+    flex-direction: column;
+  }
+  .navFlex {
+    flex-direction: column;
+  }
+  .noticia {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .historia {
+    background-color: rgba(199, 199, 199, 0.568627451);
+  }
+  .galeria {
+    grid-template-areas: "goku gohan " "krillin vegeta" "roshi yamcha" "androide piccolo " "freezer freezer";
+  }
+  .personaje {
+    max-width: 100%;
+    justify-content: start;
+    align-items: normal;
+  }
+}/*# sourceMappingURL=style.css.map */

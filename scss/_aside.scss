@@ -1,0 +1,19 @@
+.aside {
+    float: right;
+    background-color: #eec6c694;
+    border: solid rgba(255, 255, 255, 0.219);
+    text-align: center;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+    background-image: linear-gradient(to right, #eb7100, #297eec);
+    .noticia {
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff56;
+        align-items: center;
+        padding: 5px;
+        margin: 1%;
+    }
+}
