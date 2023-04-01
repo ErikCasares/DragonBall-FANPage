@@ -1,8 +1,12 @@
 .container {
-    background-image: linear-gradient(rgb(87, 90, 243), blue,);
+    background-image: linear-gradient( #eb7100, #297eec);
 }
 body{
-    background-color: #eb7100;
+    background-image: url(../imagenes/namek.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 .grid-layout {
     display: grid;
@@ -26,7 +30,10 @@ img {
     max-width: min-content;
     border-radius: 20px;
 }
-
+.main{
+    background-color: rgba(240, 240, 240, 0.315);
+    border-radius: 50px 0px;
+}
 .sagas {
     display: grid;
     grid-template-columns: 40% 40%;

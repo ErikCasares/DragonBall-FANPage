@@ -38,15 +38,10 @@ nav li {
         flex-direction: column;
     }
 
-    .aside-noticias {
+    .noticias {
         flex-direction: row;
         width: 50px;
     }
-
-    .grid-layout {
-        grid-template-columns: 100%;
-    }
-
 
 }
 
@@ -60,10 +55,9 @@ nav li {
         flex-direction: column;
     }
 
-    .noticia{
-        display: grid;
-        grid-template-columns: 50% 50%;
-
+    .noti{
+        display: flex;
+        flex-direction: row;
     }
 
     .historia {

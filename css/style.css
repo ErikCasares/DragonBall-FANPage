@@ -1,10 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins:ital@0;1&family=Rubik:ital@0;1&display=swap");
 .container {
-  background-image: linear-gradient(rgb(87, 90, 243), blue);
+  background-image: linear-gradient(#eb7100, #297eec);
 }
 
 body {
-  background-color: #eb7100;
+  background-image: url(../imagenes/namek.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .grid-layout {
@@ -28,6 +32,11 @@ main {
 img {
   max-width: min-content;
   border-radius: 20px;
+}
+
+.main {
+  background-color: rgba(240, 240, 240, 0.315);
+  border-radius: 50px 0px;
 }
 
 .sagas {
@@ -182,15 +191,17 @@ nav ul li a {
   }
 }
 .aside {
-  float: right;
-  background-color: rgba(238, 198, 198, 0.5803921569);
-  border: solid rgba(255, 255, 255, 0.219);
+  background-color: white;
+  border-radius: 50px 0px;
   text-align: center;
-  padding: 1%;
+  padding: 2% 1%;
   display: flex;
   flex-direction: column;
   scroll-behavior: smooth;
   background-image: linear-gradient(to right, #eb7100, #297eec);
+  border: solid 5px #d4d4d4;
+  border-radius: 50px 0px;
+  margin: 1%;
 }
 .aside .noticia {
   display: flex;
@@ -199,6 +210,7 @@ nav ul li a {
   align-items: center;
   padding: 5px;
   margin: 1%;
+  border-radius: 50px 0px;
 }
 
 footer {
@@ -247,12 +259,9 @@ nav li {
   .aside {
     flex-direction: column;
   }
-  .aside-noticias {
+  .noticias {
     flex-direction: row;
     width: 50px;
-  }
-  .grid-layout {
-    grid-template-columns: 100%;
   }
 }
 @media screen and (max-width: 992px) {
@@ -263,9 +272,9 @@ nav li {
   .navFlex {
     flex-direction: column;
   }
-  .noticia {
-    display: grid;
-    grid-template-columns: 50% 50%;
+  .noti {
+    display: flex;
+    flex-direction: row;
   }
   .historia {
     background-color: rgba(199, 199, 199, 0.568627451);
