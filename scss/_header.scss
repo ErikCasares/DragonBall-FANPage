@@ -12,10 +12,11 @@
     text-decoration: double;
     background-image: linear-gradient(to right, #eb7100, #297eec,blue);
     border-radius: 50px 0px;
-    margin: 5px 4px 5px 5px;
+    margin: 5px 0px 5px 0px;
 }
 
 header {
+    padding: 0;
     text-decoration-color: #eb7100;
     font-family: 'Poppins', sans-serif;
     grid-column: 1/3;
