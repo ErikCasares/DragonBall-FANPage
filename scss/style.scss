@@ -4,11 +4,13 @@
 @import './header';
 @import'./aside';
 @import './footer';
+
 * {
     margin: 0;
     padding: 0;
 }
-.arriba{
+
+.arriba {
     position: fixed;
     bottom: 5%;
     right: 5%;
@@ -25,7 +27,25 @@
 }
 
 
-
+.galerie{
+    display: flex;
+    width: 100%;
+    height: 520px;
+    margin: 5% 0;
+    img{
+        width: 0px;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: .8;
+        transition: 0.5s ease;
+        &:hover{
+            cursor: crosshair;
+            width: 300px;
+            opacity: 1;
+            filter: contrast(120%);
+        }
+    }
+}
 
 
 
@@ -68,7 +88,7 @@ nav li {
         flex-direction: column;
     }
 
-    .noti{
+    .noti {
         display: flex;
         flex-direction: row;
     }
@@ -76,16 +96,18 @@ nav li {
     .historia {
         background-color: #c7c7c791;
     }
-    .galeria{
-        grid-template-areas: 
-        "goku gohan "
-        "krillin vegeta"
-        "roshi yamcha"
-        "androide piccolo "
-        "freezer freezer"
-    
+
+    .galeria {
+        grid-template-areas:
+            "goku gohan "
+            "krillin vegeta"
+            "roshi yamcha"
+            "androide piccolo "
+            "freezer freezer"
+
     }
-    .personaje{
+
+    .personaje {
         max-width: 100%;
         justify-content: start;
         align-items: normal;
