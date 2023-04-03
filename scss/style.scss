@@ -8,8 +8,21 @@
     margin: 0;
     padding: 0;
 }
-
-
+.arriba{
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    color: black;
+    border-style: outset;
+    border-color: #eb7100;
+    border-radius: 25px 0%;
+    background-color: #297eec;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 3rem;
+    width: 6rem;
+}
 
 
 
