@@ -12,8 +12,8 @@
 
 .arriba {
     position: fixed;
-    bottom: 5%;
-    right: 5%;
+    bottom: 3%;
+    right: 3%;
     color: black;
     border-style: outset;
     border-color: #eb7100;
@@ -36,7 +36,7 @@
         width: 0px;
         flex-grow: 1;
         object-fit: cover;
-        opacity: .8;
+        opacity: .5;
         transition: 0.5s ease;
         &:hover{
             cursor: crosshair;
@@ -76,12 +76,25 @@ nav li {
         width: 50px;
     }
 
+    .galerie{
+        height: 400px;
+
+    }
 }
 
 @media screen and (max-width: 992px) {
     .sagas {
         display: flex;
         flex-direction: column;
+    }
+
+    .galerie{
+        height: 300px;
+        img{
+            &:hover{
+                width: 250px;
+            }
+        }
     }
 
     .navFlex {

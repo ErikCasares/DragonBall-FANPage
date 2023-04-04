@@ -15,6 +15,10 @@ body {
   border-radius: 0 0 50px 0;
 }
 
+.img-fluid {
+  border-radius: 0 0 50px 0;
+}
+
 .mapa-img {
   width: 50%;
   float: right;
@@ -235,8 +239,8 @@ footer {
 
 .arriba {
   position: fixed;
-  bottom: 5%;
-  right: 5%;
+  bottom: 3%;
+  right: 3%;
   color: black;
   border-style: outset;
   border-color: #eb7100;
@@ -259,7 +263,7 @@ footer {
   width: 0px;
   flex-grow: 1;
   object-fit: cover;
-  opacity: 0.8;
+  opacity: 0.5;
   transition: 0.5s ease;
 }
 .galerie img:hover {
@@ -289,11 +293,20 @@ nav li {
     flex-direction: row;
     width: 50px;
   }
+  .galerie {
+    height: 400px;
+  }
 }
 @media screen and (max-width: 992px) {
   .sagas {
     display: flex;
     flex-direction: column;
+  }
+  .galerie {
+    height: 300px;
+  }
+  .galerie img:hover {
+    width: 250px;
   }
   .navFlex {
     flex-direction: column;

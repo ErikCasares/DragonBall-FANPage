@@ -11,8 +11,10 @@ body{
 
 
 
-
 .img-thumbnail{
+    border-radius: 0 0 50px 0;
+}
+.img-fluid{
     border-radius: 0 0 50px 0;
 }
 .mapa-img{
