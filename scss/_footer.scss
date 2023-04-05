@@ -4,7 +4,7 @@ footer {
     padding: 10px 5%;
     border-radius: 50px 0px;
     border-color: #000;
-    background-image: linear-gradient(to right, #eb7100, #297eec,blue);
+    @include gradient-r;
     border: 5px solid;
     margin: 1% 0%;
 }

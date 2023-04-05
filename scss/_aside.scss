@@ -1,22 +1,25 @@
 .aside {
-    background-color: white;
     border-radius: 50px 0px;
     text-align: center;
     padding: 2% 1%;
     display: flex;
     flex-direction: column;
     scroll-behavior: smooth;
-    background-image: linear-gradient(to right, #eb7100, #297eec);
-    border: solid 5px #dee2e6;
+    @include gradient-r;
+    border: solid 5px #d4d4d4;
     border-radius: 50px 0px;
     margin: 1%;
     .noticia {
         display: flex;
+
         flex-direction: column;
         background-color: #ffffff56;
         align-items: center;
         padding: 5px;
         margin: 1%;
         border-radius: 50px 0px;
+        p{
+            font-weight: bolder;
+        }
     }
 }

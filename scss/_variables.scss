@@ -1,0 +1,12 @@
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;}
+@mixin gradient-r {
+    background-image: linear-gradient(to right, #ff7b00, #69696941,blue   );
+}
+$base-color: #297eec;
+$shadow: "";
+@for $i from 1 through 4{
+    $shadow: $shadow + "#{$i}px #{$i}px 0px 2px " + darken($base-color,$i*5) + ",";
+}
+$shadow : str-slice($shadow,0,str-length($shadow)-1);
