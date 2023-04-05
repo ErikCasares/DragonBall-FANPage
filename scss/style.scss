@@ -85,7 +85,15 @@ nav li {
             "roshi yamcha"
             "androide piccolo "
             "freezer freezer"
+    }
 
+    footer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .footer{
+        justify-content: flex-start;
     }
 
     .personaje {

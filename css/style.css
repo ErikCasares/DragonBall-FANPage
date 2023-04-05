@@ -170,7 +170,7 @@ p {
 
 .arriba {
   position: fixed;
-  bottom: 3%;
+  bottom: 0%;
   right: 3%;
   color: black;
   border-style: outset;
@@ -180,8 +180,12 @@ p {
   display: flex;
   align-content: center;
   justify-content: center;
-  height: 6rem;
-  width: 3rem;
+  height: 2rem;
+  width: 6rem;
+}
+.arriba p {
+  padding: 0%;
+  margin: 0%;
 }
 
 .navFlex {
@@ -283,6 +287,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .foot {
@@ -346,6 +351,14 @@ nav li {
   }
   .galeria {
     grid-template-areas: "goku gohan " "krillin vegeta" "roshi yamcha" "androide piccolo " "freezer freezer";
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .footer {
+    justify-content: flex-start;
   }
   .personaje {
     max-width: 100%;
