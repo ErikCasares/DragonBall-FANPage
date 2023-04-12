@@ -28,17 +28,6 @@ nav ul li a {
     transition: 0.4;
 }
 
-.active{
-    color:black;
-    appearance: none;
-    border:none;
-    width: 400px;
-    height:40px;
-    font-size:24px;
-    background: $base-color;
-    box-shadow: unquote($shadow);
-    background-color: #eb7100;
-}
 
 .box {
     margin: 0px 5px;

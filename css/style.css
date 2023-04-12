@@ -219,18 +219,6 @@ nav ul li a {
   transition: 0.4;
 }
 
-.active {
-  color: black;
-  appearance: none;
-  border: none;
-  width: 400px;
-  height: 40px;
-  font-size: 24px;
-  background: #297eec;
-  box-shadow: 1px 1px 0px 2px #1570e7,2px 2px 0px 2px #1265d0,3px 3px 0px 2px #1059b8,4px 4px 0px 2px #0e4ea1;
-  background-color: #eb7100;
-}
-
 .box {
   margin: 0px 5px;
   border-radius: 0px 0px 30px 0px;
