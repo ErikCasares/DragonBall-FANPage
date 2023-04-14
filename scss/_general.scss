@@ -1,7 +1,8 @@
 .container {
-    background-image: linear-gradient(#eb7100, #eca829,#eb7100, #eca829);
+    background-image: linear-gradient(#eb7100, #eca829, #eb7100, #eca829);
 }
-body{
+
+body {
     background-image: url(../imagenes/namek.webp);
     background-size: cover;
     background-repeat: no-repeat;
@@ -10,28 +11,32 @@ body{
 }
 
 
-.akira{
+.akira {
     animation: fadeIn 2s ease;
 }
-.img-thumbnail{
+
+.img-thumbnail {
     border-radius: 0 0 50px 0;
 }
-.img-fluid{
+
+.img-fluid {
     border-radius: 0 0 50px 0;
 }
-.mapa-img{
+
+.mapa-img {
     width: 50%;
     float: right;
 }
-.main{
+
+.main {
     font-family: 'Oswald', sans-serif;
     background-color: rgba(240, 240, 240, 0.315);
     border-radius: 50px 0px;
     padding: 1% 2% 2% 2%;
     margin: 1% 0 1% 0;
 }
-.sagas {
-    /*
+
+/*
     display: grid;
     grid-template-columns: 40% 40%;
     grid-template-rows: auto auto auto auto;
@@ -39,66 +44,79 @@ body{
     justify-content: space-around;
     margin: 1% 0;
     */
-    .historia {
-        margin: 5% 0%;
-        padding: 50px 0px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: justify;
-        background-color: rgba(240, 240, 240, 0.315);
-        border-radius: 10px;
-        p {
-            padding: 0% 10%;
-        }
-        img {
+.historia {
+    margin: 5% 0%;
+    padding: 18px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    background-color: rgba(240, 240, 240, 0.315);
+    border-radius: 10px;
+
+    p {
+        padding: 0% 10%;
+    }
+
+    img {
         width: 300px;
-        }
-    }
-    .goku-chiquito{
-        grid-column: 2/2;
-        grid-row: 1/1;
-    }
-    .dball {
-        grid-column: 1/2;
-        grid-row: 1/3;
-    }
-    .dbz {
-        grid-column: 2/3;
-        grid-row: 2/4;
-    }
-    .dbgt {
-        grid-column: 1/2;
-        grid-row: 3/5;
-    }
-    .hesferas {
-        grid-column: 2/3;
-        grid-row: 4/6;
-    }
-    .gohan-goten-trunks{
-        grid-column: 1/3;
-        grid-row: 5/6;
     }
 }
-.accordion-button{
+
+.goku-chiquito {
+    grid-column: 2/2;
+    grid-row: 1/1;
+}
+
+.dball {
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.dbz {
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
+
+.dbgt {
+    grid-column: 1/2;
+    grid-row: 3/5;
+}
+
+.hesferas {
+    grid-column: 2/3;
+    grid-row: 4/6;
+}
+
+.gohan-goten-trunks {
+    grid-column: 1/3;
+    grid-row: 5/6;
+}
+
+.accordion-button {
     @include gradient-r;
     border-radius: 50px 0px;
 }
-button{
-    border-radius: 50px;
-}
-.accordion-body{
-    background-color: #50505070;
-    border-radius: 50px 0px;
+
+button {
+    border-radius: 25px 0px;
 }
 
-.accordion-item{
+.accordion-body {
+    background-color: #50505070;
+    border-radius: 50px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.accordion-item {
     background-color: rgba(0, 0, 0, 0);
     color: aliceblue;
 }
 
 
-.personaje{
+.personaje {
     align-items: baseline;
     overflow: hidden;
     width: 100%;
@@ -107,10 +125,15 @@ button{
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    img{
-    
+
+    img {
+
         object-fit: contain;
     }
+}
+
+h1 {
+    padding-top: 5%;
 }
 
 li {
@@ -119,15 +142,17 @@ li {
 
 a {
     text-decoration: none;
+    font-family: 'poppins', sans-serif;
 }
 
 p {
     padding-top: 10px;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 580;
-    font-size: medium;
+
+
+    font-size: large;
 }
-.galeria{
+
+.galeria {
     margin: 10% 0%;
     display: grid;
     grid-template-columns: repeat(4, auto);
@@ -135,11 +160,12 @@ p {
     gap: 15px;
     padding: 1%;
     justify-content: center;
-    grid-template-areas: 
-"goku goku gohan vegeta"
-"goku goku krillin vegeta"
-"roshi roshi krillin yamcha"
-"androide piccolo freezer freezer";
+    grid-template-areas:
+        "goku goku gohan vegeta"
+        "goku goku krillin vegeta"
+        "roshi roshi krillin yamcha"
+        "androide piccolo freezer freezer";
+
     .goku {
         grid-area: goku;
     }
@@ -178,17 +204,19 @@ p {
     }
 }
 
-.galerie{
+.galerie {
     display: flex;
     @include sizes(100%, 520px);
     margin: 10% 0;
-    img{
+
+    img {
         width: 0px;
         flex-grow: 1;
         object-fit: cover;
         opacity: .5;
         transition: 0.5s ease;
-        &:hover{
+
+        &:hover {
             cursor: crosshair;
             width: 300px;
             opacity: 1;
@@ -200,13 +228,15 @@ p {
 
 .arriba {
     position: fixed;
-    bottom: 0%;
+    bottom: 3%;
     right: 3%;
     display: flex;
     align-content: center;
     justify-content: center;
+    cursor: pointer;
     @include sizes(60px, 60px);
-    img{
+
+    img {
         @include sizes(60px, 60px)
-    }   
+    }
 }
