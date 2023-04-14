@@ -1,12 +1,29 @@
 @mixin sizes($width, $height) {
     height: $height;
-    width: $width;}
-@mixin gradient-r {
-    background-image: linear-gradient(to right, #ff7b00, #69696941,blue   );
+    width: $width;
 }
+
+@mixin gradient-r {
+    background: rgb(235, 113, 0);
+    background: linear-gradient(90deg, rgba(235, 113, 0, 1) 25%, rgba(41, 126, 236, 1) 75%);
+    ;
+}
+
 $base-color: #297eec;
 $shadow: "";
-@for $i from 1 through 4{
-    $shadow: $shadow + "#{$i}px #{$i}px 0px 2px " + darken($base-color,$i*5) + ",";
+
+@for $i from 1 through 4 {
+    $shadow: $shadow+"#{$i}px #{$i}px 0px 2px "+darken($base-color, $i*5)+",";
 }
-$shadow : str-slice($shadow,0,str-length($shadow)-1);
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        filter: blur(20px);
+    }
+
+    10% {
+        opacity: 1;
+        filter: brightness(2) blur(10px);
+    }
+}

@@ -10,7 +10,9 @@ body{
 }
 
 
-
+.akira{
+    animation: fadeIn 2s ease;
+}
 .img-thumbnail{
     border-radius: 0 0 50px 0;
 }
@@ -29,13 +31,16 @@ body{
     margin: 1% 0 1% 0;
 }
 .sagas {
+    /*
     display: grid;
     grid-template-columns: 40% 40%;
     grid-template-rows: auto auto auto auto;
     gap: 10px;
     justify-content: space-around;
     margin: 1% 0;
+    */
     .historia {
+        margin: 5% 0%;
         padding: 50px 0px;
         display: flex;
         flex-direction: column;
@@ -75,6 +80,23 @@ body{
         grid-row: 5/6;
     }
 }
+.accordion-button{
+    @include gradient-r;
+    border-radius: 50px 0px;
+}
+button{
+    border-radius: 50px;
+}
+.accordion-body{
+    background-color: #50505070;
+    border-radius: 50px 0px;
+}
+
+.accordion-item{
+    background-color: rgba(0, 0, 0, 0);
+    color: aliceblue;
+}
+
 
 .personaje{
     align-items: baseline;
@@ -106,6 +128,7 @@ p {
     font-size: medium;
 }
 .galeria{
+    margin: 10% 0%;
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-template-rows: repeat(3, 200px);
@@ -158,7 +181,7 @@ p {
 .galerie{
     display: flex;
     @include sizes(100%, 520px);
-    margin: 5% 0;
+    margin: 10% 0;
     img{
         width: 0px;
         flex-grow: 1;
@@ -179,17 +202,11 @@ p {
     position: fixed;
     bottom: 0%;
     right: 3%;
-    color: black;
-    border-style: outset;
-    border-color: #eb7100;
-    border-radius: 25px 0%;
-    background-color: #297eec;
     display: flex;
     align-content: center;
     justify-content: center;
-    @include sizes(6rem, 2rem);
-    p{
-        padding: 0%;
-        margin: 0%;
-    }
+    @include sizes(60px, 60px);
+    img{
+        @include sizes(60px, 60px)
+    }   
 }

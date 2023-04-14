@@ -13,6 +13,9 @@
     @include gradient-r;
     border-radius: 50px 0px;
     margin: 5px 0px 5px 0px;
+    float: left;
+    position: fixed;
+    z-index: 1000;
 }
 
 header {

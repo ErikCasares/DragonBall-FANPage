@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins:ital@0;1&family=Rubik:ital@0;1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&family=Quicksand:wght@300;400&display=swap");
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    filter: blur(20px);
+  }
+  10% {
+    opacity: 1;
+    filter: brightness(2) blur(10px);
+  }
+}
 .container {
   background-image: linear-gradient(#eb7100, #eca829, #eb7100, #eca829);
 }
@@ -10,6 +20,10 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+}
+
+.akira {
+  animation: fadeIn 2s ease;
 }
 
 .img-thumbnail {
@@ -34,14 +48,17 @@ body {
 }
 
 .sagas {
+  /*
   display: grid;
   grid-template-columns: 40% 40%;
   grid-template-rows: auto auto auto auto;
   gap: 10px;
   justify-content: space-around;
   margin: 1% 0;
+  */
 }
 .sagas .historia {
+  margin: 5% 0%;
   padding: 50px 0px;
   display: flex;
   flex-direction: column;
@@ -81,6 +98,26 @@ body {
   grid-row: 5/6;
 }
 
+.accordion-button {
+  background: rgb(235, 113, 0);
+  background: linear-gradient(90deg, rgb(235, 113, 0) 25%, rgb(41, 126, 236) 75%);
+  border-radius: 50px 0px;
+}
+
+button {
+  border-radius: 50px;
+}
+
+.accordion-body {
+  background-color: rgba(80, 80, 80, 0.4392156863);
+  border-radius: 50px 0px;
+}
+
+.accordion-item {
+  background-color: rgba(0, 0, 0, 0);
+  color: aliceblue;
+}
+
 .personaje {
   align-items: baseline;
   overflow: hidden;
@@ -111,6 +148,7 @@ p {
 }
 
 .galeria {
+  margin: 10% 0%;
   display: grid;
   grid-template-columns: repeat(4, auto);
   grid-template-rows: repeat(3, 200px);
@@ -152,7 +190,7 @@ p {
   display: flex;
   height: 520px;
   width: 100%;
-  margin: 5% 0;
+  margin: 10% 0;
 }
 .galerie img {
   width: 0px;
@@ -172,20 +210,15 @@ p {
   position: fixed;
   bottom: 0%;
   right: 3%;
-  color: black;
-  border-style: outset;
-  border-color: #eb7100;
-  border-radius: 25px 0%;
-  background-color: #297eec;
   display: flex;
   align-content: center;
   justify-content: center;
-  height: 2rem;
-  width: 6rem;
+  height: 60px;
+  width: 60px;
 }
-.arriba p {
-  padding: 0%;
-  margin: 0%;
+.arriba img {
+  height: 60px;
+  width: 60px;
 }
 
 .navFlex {
@@ -200,9 +233,13 @@ p {
   height: fit-content;
   font-size: larger;
   text-decoration: double;
-  background-image: linear-gradient(to right, #ff7b00, rgba(105, 105, 105, 0.2549019608), blue);
+  background: rgb(235, 113, 0);
+  background: linear-gradient(90deg, rgb(235, 113, 0) 25%, rgb(41, 126, 236) 75%);
   border-radius: 50px 0px;
   margin: 5px 0px 5px 0px;
+  float: left;
+  position: fixed;
+  z-index: 1000;
 }
 
 header {
@@ -243,7 +280,8 @@ nav ul li a {
   display: flex;
   flex-direction: column;
   scroll-behavior: smooth;
-  background-image: linear-gradient(to right, #ff7b00, rgba(105, 105, 105, 0.2549019608), blue);
+  background: rgb(235, 113, 0);
+  background: linear-gradient(90deg, rgb(235, 113, 0) 25%, rgb(41, 126, 236) 75%);
   border: solid 5px #d4d4d4;
   border-radius: 50px 0px;
   margin: 1%;
@@ -267,7 +305,8 @@ footer {
   padding: 10px 5%;
   border-radius: 50px 0px;
   border-color: #000;
-  background-image: linear-gradient(to right, #ff7b00, rgba(105, 105, 105, 0.2549019608), blue);
+  background: rgb(235, 113, 0);
+  background: linear-gradient(90deg, rgb(235, 113, 0) 25%, rgb(41, 126, 236) 75%);
   border: 5px solid;
   margin: 1% 0%;
 }
