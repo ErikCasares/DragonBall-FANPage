@@ -109,6 +109,10 @@ body {
   border-radius: 50px 0px;
 }
 
+.container-fluid {
+  flex-wrap: wrap;
+}
+
 button {
   border-radius: 25px 0px;
 }
@@ -173,7 +177,7 @@ p {
 
 .galeria-humano {
   background-image: url(../imagenes/planeta-tierra.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -181,7 +185,7 @@ p {
 
 .galeria-sayan {
   background-image: url(../imagenes/planeta-vegeta.webp);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -191,7 +195,7 @@ p {
   background-image: url(../imagenes/laboratorio-maki.jpg);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: initial;
   background-attachment: fixed;
 }
 
@@ -212,35 +216,6 @@ p {
   gap: 15px;
   padding: 2% 2%;
   justify-content: center;
-  grid-template-areas: "goku goku gohan vegeta" "goku goku krillin vegeta" "roshi roshi krillin yamcha" "androide piccolo freezer freezer";
-}
-.galeria .goku {
-  grid-area: goku;
-}
-.galeria .gohan {
-  grid-area: gohan;
-}
-.galeria .vegeta {
-  grid-area: vegeta;
-}
-.galeria .krillin {
-  grid-area: krillin;
-}
-.galeria .yamcha {
-  grid-area: yamcha;
-  justify-content: flex-start;
-}
-.galeria .roshi {
-  grid-area: roshi;
-}
-.galeria .piccolo {
-  grid-area: piccolo;
-}
-.galeria .androide {
-  grid-area: androide;
-}
-.galeria .freezer {
-  grid-area: freezer;
 }
 
 .galerie {
@@ -288,7 +263,7 @@ p {
 .navFlex {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
   text-transform: uppercase;
