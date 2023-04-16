@@ -148,19 +148,49 @@ p {
 
     font-size: large;
 }
-.galeria-sayan,.galeria-androides{  
+.galeria-sayan,.galeria-androides,.galeria-humano{  
     margin: 2% 0%;
     background-color: rgba(240, 240, 240, 0.315);
     border-radius: 50px 0;
     display: grid;
     grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(3);
+    grid-template-rows: repeat(3, auto);
     gap: 15px;
     padding: 5% 2%;
     justify-content: center;
+    figure{
+        transition: transform .5s;
+        &:hover{
+        transform: scale(1.5);
+        }
+    }
+}
+.galeria-humano{
+    background-image: url(../imagenes/planeta-tierra.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.galeria-sayan{
+    background-image: url(../imagenes/planeta-vegeta.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.galeria-androides{
+    background-image: url(../imagenes/laboratorio-maki.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 .figure-caption{
     font-size: large;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.39);
+    border-radius: 10px;
 }
 .galeria {
     margin: 2% 0%;
@@ -238,6 +268,10 @@ p {
     }
 }
 
+.peleas{
+    background-color: rgba(240, 240, 240, 0.315);
+    border-radius: 10px;
+}
 
 .arriba {
     position: fixed;

@@ -15,6 +15,7 @@
     margin: 5px 0px 5px 0px;
     float: left;
     position: fixed;
+    nav-index: unset;
     z-index: 1000;
 }
 
@@ -31,6 +32,10 @@ nav ul li a {
     transition: 0.4;
 }
 
+#arriba{
+    justify-self: end;
+    align-self: flex-end;
+}
 
 .box {
     margin: 0px 5px;
