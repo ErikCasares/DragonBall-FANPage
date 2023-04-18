@@ -28,7 +28,6 @@
         flex-wrap: wrap;
         flex-direction: row;
         height: 400px;
-
     }
 }
 
@@ -59,11 +58,6 @@
         float: right;
     }
 
-    .noti {
-        display: flex;
-        flex-direction: row;
-    }
-
     .historia {
         background-color: #c7c7c791;
     }
@@ -72,22 +66,16 @@
             padding: 0 3%;
         }
     }
-    .galeria {
-        grid-template-areas:
-            "goku gohan "
-            "krillin vegeta"
-            "roshi yamcha"
-            "androide piccolo "
-            "freezer freezer"
-    }
 
-    footer{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
     .footer{
+        display: flex;
+        flex-direction: row;
         justify-content: flex-start;
+        align-items: flex-start;
+        .icon{
+            width: 30px;
+            height: 30px;
+        }
     }
 
     .personaje {
@@ -122,6 +110,9 @@
     }
     .d-inline-block {
         display: none !important;
+    }
+    .galeria-androides{
+        background-size: cover;
     }
     .main{
         padding-top: 40px;
