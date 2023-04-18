@@ -22,7 +22,7 @@ body {
   background-attachment: fixed;
 }
 
-.akira {
+.akira, .h-final {
   animation: fadeIn 2s ease;
 }
 
@@ -47,14 +47,6 @@ body {
   margin: 10% 0 1% 0;
 }
 
-/*
-    display: grid;
-    grid-template-columns: 40% 40%;
-    grid-template-rows: auto auto auto auto;
-    gap: 10px;
-    justify-content: space-around;
-    margin: 1% 0;
-    */
 .historia {
   margin: 5% 0%;
   padding: 18px 0px;
@@ -70,32 +62,7 @@ body {
 }
 
 .principal p {
-  padding: 0 10%;
-}
-
-.goku-chiquito {
-  grid-column: 2/2;
-  grid-row: 1/1;
-}
-
-.dball {
-  grid-column: 1/2;
-  grid-row: 1/3;
-}
-
-.dbz {
-  grid-column: 2/3;
-  grid-row: 2/4;
-}
-
-.dbgt {
-  grid-column: 1/2;
-  grid-row: 3/5;
-}
-
-.hesferas {
-  grid-column: 2/3;
-  grid-row: 4/6;
+  padding: 0 5%;
 }
 
 .gohan-goten-trunks {
@@ -107,10 +74,6 @@ body {
   background: rgb(235, 113, 0);
   background: linear-gradient(90deg, rgb(235, 113, 0) 25%, rgb(41, 126, 236) 75%);
   border-radius: 50px 0px;
-}
-
-.container-fluid {
-  flex-wrap: wrap;
 }
 
 button {
@@ -141,6 +104,18 @@ button {
 }
 .personaje img {
   object-fit: contain;
+}
+
+h1 {
+  margin-right: 40px;
+}
+
+h2 {
+  margin-top: 30px;
+}
+
+nav li {
+  text-align: center;
 }
 
 li {
@@ -263,7 +238,7 @@ p {
 .navFlex {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   text-transform: uppercase;
@@ -375,18 +350,6 @@ footer {
 * {
   margin: 0;
   padding: 0;
-}
-
-h1 {
-  margin-right: 40px;
-}
-
-h2 {
-  margin-top: 30px;
-}
-
-nav li {
-  text-align: center;
 }
 
 @media screen and (max-width: 1200px) {
