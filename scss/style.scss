@@ -67,16 +67,9 @@
         }
     }
 
-    .footer{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
-        .icon{
-            width: 30px;
-            height: 30px;
-        }
-    }
+.footer{
+    justify-content: center;
+}
 
     .personaje {
         max-width: 100%;
@@ -99,14 +92,33 @@
         font-size: large;
     }
     p {
-        padding: 0;
         font-size: small;
         font-weight: lighter;
     }
     a{  font-size: small;
     }
     .footer{
-        height: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p{
+            padding: 0;
+            margin: 0;
+        }
+        .icon{
+            width: 30px;
+            height: 30px;
+        }
+    }
+    .linksfooter{
+        display: flex;
+        flex-direction: row;
+
+    }
+    .arriba{
+        bottom: 5%;
+        right: 5%;
     }
     .d-inline-block {
         display: none !important;
@@ -116,6 +128,7 @@
     }
     .main{
         padding-top: 40px;
+        background-color: rgba(255, 255, 255, 0.315);
     }
     .galerie {
         display: flex;
@@ -130,11 +143,11 @@
             flex-grow: 1;
             object-fit: cover;
             opacity: 0.8;
-            transition: 1.5s ease;
+            transition: 1s ease;
             
             &:hover {
                 cursor: crosshair;
-                width: 90vw;
+                width: 88.5vw;
                 opacity: 1;
                 filter: contrast(120%);
             }

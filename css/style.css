@@ -183,7 +183,7 @@ p {
 
 .galeria {
   margin: 2% 0%;
-  background-color: rgba(240, 240, 240, 0.315);
+  background-color: rgba(255, 255, 255, 0.315);
   border-radius: 50px 0;
   display: grid;
   grid-template-columns: repeat(4, auto);
@@ -205,7 +205,7 @@ p {
   flex-grow: 1;
   object-fit: cover;
   opacity: 0.5;
-  transition: 1.5s ease;
+  transition: 0.5s ease;
 }
 .galerie img:hover {
   cursor: crosshair;
@@ -285,14 +285,6 @@ nav ul li a {
   background-color: #eb7100;
 }
 
-@keyframes un_efecto {
-  0% {
-    background-color: orange;
-  }
-  100% {
-    background-color: #297eec;
-  }
-}
 .aside {
   border-radius: 50px 0px;
   text-align: center;
@@ -337,7 +329,11 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  align-items: flex-end;
+  align-items: center;
+}
+.footer p {
+  padding: 0;
+  margin: 0;
 }
 
 .foot {
@@ -399,14 +395,7 @@ footer {
     padding: 0 3%;
   }
   .footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-  .footer .icon {
-    width: 30px;
-    height: 30px;
+    justify-content: center;
   }
   .personaje {
     max-width: 100%;
@@ -429,7 +418,6 @@ footer {
     font-size: large;
   }
   p {
-    padding: 0;
     font-size: small;
     font-weight: lighter;
   }
@@ -437,7 +425,26 @@ footer {
     font-size: small;
   }
   .footer {
-    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer p {
+    padding: 0;
+    margin: 0;
+  }
+  .footer .icon {
+    width: 30px;
+    height: 30px;
+  }
+  .linksfooter {
+    display: flex;
+    flex-direction: row;
+  }
+  .arriba {
+    bottom: 5%;
+    right: 5%;
   }
   .d-inline-block {
     display: none !important;
@@ -447,6 +454,7 @@ footer {
   }
   .main {
     padding-top: 40px;
+    background-color: rgba(255, 255, 255, 0.315);
   }
   .galerie {
     display: flex;
@@ -462,11 +470,11 @@ footer {
     flex-grow: 1;
     object-fit: cover;
     opacity: 0.8;
-    transition: 1.5s ease;
+    transition: 1s ease;
   }
   .galerie img:hover {
     cursor: crosshair;
-    width: 90vw;
+    width: 88.5vw;
     opacity: 1;
     filter: contrast(120%);
   }

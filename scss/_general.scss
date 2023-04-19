@@ -172,7 +172,7 @@ p {
 }
 .galeria {
     margin: 2% 0%;
-    background-color: rgba(240, 240, 240, 0.315);
+    background-color: rgba(255, 255, 255, 0.315);
     border-radius: 50px 0;
     display: grid;
     grid-template-columns: repeat(4, auto);
@@ -193,7 +193,7 @@ p {
         flex-grow: 1;
         object-fit: cover;
         opacity: .5;
-        transition: 1.5s ease;
+        transition: 0.5s ease;
 
         &:hover {
             cursor: crosshair;
