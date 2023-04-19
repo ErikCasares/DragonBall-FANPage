@@ -40,7 +40,7 @@ body {
 }
 
 .main {
-  font-family: "Oswald", sans-serif;
+  font-family: "Rubik", sans-serif;
   background-color: rgba(240, 240, 240, 0.315);
   border-radius: 50px 0px;
   padding: 1% 2% 2% 2%;
@@ -59,6 +59,9 @@ body {
 }
 .historia img {
   width: 300px;
+}
+.historia .mini-historia {
+  font-family: "Poppins", sans-serif;
 }
 
 .principal p {
@@ -313,6 +316,7 @@ nav ul li a {
 
 footer {
   grid-column: 1/3;
+  font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   font-size: large;
   font-weight: 500;
