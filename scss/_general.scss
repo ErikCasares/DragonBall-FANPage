@@ -11,7 +11,8 @@ body {
 }
 
 
-.akira, .h-final {
+.akira,
+.h-final {
     animation: fadeIn 2s ease;
 }
 
@@ -28,7 +29,8 @@ body {
     float: right;
 }
 
-.main {font-family: 'Rubik', sans-serif;
+.main {
+    font-family: 'Rubik', sans-serif;
     background-color: rgba(240, 240, 240, 0.315);
     border-radius: 50px 0px;
     padding: 1% 2% 2% 2%;
@@ -44,15 +46,18 @@ body {
     text-align: justify;
     background-color: rgba(240, 240, 240, 0.315);
     border-radius: 10px;
+
     img {
         width: 300px;
     }
-    .mini-historia{
+
+    .mini-historia {
         font-family: 'Poppins', sans-serif;
     }
 }
-.principal{
-    p{
+
+.principal {
+    p {
         padding: 0 5%;
     }
 }
@@ -113,6 +118,7 @@ nav li {
 
     text-align: center;
 }
+
 li {
     list-style-type: none;
 }
@@ -128,7 +134,10 @@ p {
 
     font-size: large;
 }
-.galeria-sayan,.galeria-androides,.galeria-humano{  
+
+.galeria-sayan,
+.galeria-androides,
+.galeria-humano {
     margin: 2% 0%;
     background-color: rgba(240, 240, 240, 0.315);
     border-radius: 50px 0;
@@ -138,40 +147,47 @@ p {
     gap: 15px;
     padding: 5% 2%;
     justify-content: center;
-    figure{
+
+    figure {
         transition: transform .5s;
-        &:hover{
-        transform: scale(1.5);
+
+        &:hover {
+            transform: scale(1.5);
         }
     }
 }
-.galeria-humano{
+
+.galeria-humano {
     background-image: url(../imagenes/planeta-tierra.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
 }
-.galeria-sayan{
+
+.galeria-sayan {
     background-image: url(../imagenes/planeta-vegeta.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
 }
-.galeria-androides{
+
+.galeria-androides {
     background-image: url(../imagenes/laboratorio-maki.jpg);
     background-size: auto;
     background-repeat: no-repeat;
     background-position: initial;
     background-attachment: fixed;
 }
-.figure-caption{
+
+.figure-caption {
     font-size: large;
     color: black;
     background-color: rgba(255, 255, 255, 0.39);
     border-radius: 10px;
 }
+
 .galeria {
     margin: 2% 0%;
     background-color: rgba(255, 255, 255, 0.315);
@@ -206,7 +222,7 @@ p {
     }
 }
 
-.peleas{
+.peleas {
     background-color: rgba(240, 240, 240, 0.315);
     border-radius: 10px;
 }

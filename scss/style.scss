@@ -5,6 +5,7 @@
 @import './header';
 @import'./aside';
 @import './footer';
+
 * {
     margin: 0;
     padding: 0;
@@ -23,8 +24,8 @@
         width: 50px;
     }
 
-    .galerie{
-        display:flex;
+    .galerie {
+        display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         height: 400px;
@@ -36,20 +37,24 @@
         display: flex;
         flex-direction: column;
     }
-    #arriba{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+
+    #arriba {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
     }
-    .galerie{
+
+    .galerie {
         height: 300px;
-        img{
-            &:hover{
+
+        img {
+            &:hover {
                 width: 250px;
             }
         }
     }
-    .navbar-brand{
+
+    .navbar-brand {
         font-size: medium;
     }
 
@@ -61,15 +66,16 @@
     .historia {
         background-color: #c7c7c791;
     }
-    .principal{
-        p{
+
+    .principal {
+        p {
             padding: 0 3%;
         }
     }
 
-.footer{
-    justify-content: center;
-}
+    .footer {
+        justify-content: center;
+    }
 
     .personaje {
         max-width: 100%;
@@ -77,66 +83,82 @@
         align-items: normal;
     }
 }
-@media screen and (max-width: 500px){
+
+@media screen and (max-width: 500px) {
     .navFlex {
         font-size: small;
         padding: 0px 0px;
-    } 
-    .navbar-brand{
+    }
+
+    .navbar-brand {
         font-size: small;
     }
-    .acordion-button{
+
+    .acordion-button {
         font-size: small;
     }
-    h2{
+
+    h2 {
         font-size: large;
     }
+
     p {
         font-size: small;
         font-weight: lighter;
     }
-    a{  font-size: small;
+
+    a {
+        font-size: small;
     }
-    .footer{
+
+    .footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        p{
+
+        p {
             padding: 0;
             margin: 0;
         }
-        .icon{
+
+        .icon {
             width: 30px;
             height: 30px;
         }
     }
-    .linksfooter{
+
+    .linksfooter {
         display: flex;
         flex-direction: row;
 
     }
-    .arriba{
+
+    .arriba {
         bottom: 5%;
         right: 5%;
     }
+
     .d-inline-block {
         display: none !important;
     }
-    .galeria-androides{
+
+    .galeria-androides {
         background-size: cover;
     }
-    .main{
+
+    .main {
         padding-top: 40px;
         background-color: rgba(255, 255, 255, 0.315);
     }
+
     .galerie {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         @include sizes(100%, 520px);
         margin: 10% 0;
-    
+
         img {
             height: 50vw;
             width: 40vw;
@@ -144,7 +166,7 @@
             object-fit: cover;
             opacity: 0.8;
             transition: 1s ease;
-            
+
             &:hover {
                 cursor: crosshair;
                 width: 88.5vw;
